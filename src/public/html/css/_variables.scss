@@ -1,0 +1,14 @@
+$color-dark: #101d49;
+$color-light: #3cc;
+$color-footerbg: #eef3f9;
+
+$media-minimum: "screen and (max-width: 640px)";
+$media-small: "screen and (min-width: 641px) and (max-width: 900px)";
+$media-normal: "screen and (min-width: 901px) and (max-width: 1200px)";
+$media-normal-up: "screen and (min-width: 901px)";
+$media-maximum: "screen and (min-width: 1201px)";
+
+$site-max-width: 73.125rem;
+$padding-sides-minimum: 0.75rem;
+$padding-sides-small: 2.5rem;
+$padding-sides-normal: calc(50vw - #{$site-max-width / 2});

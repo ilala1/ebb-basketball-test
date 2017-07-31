@@ -1,0 +1,56 @@
+@import "variables";
+@import "functions";
+@import "mixins";
+@import "marginal/header";
+@import "marginal/footer";
+@import "block/main";
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    @media #{$media-normal} {
+        font-size: width-proportional-size(1200);
+    }
+    @media #{$media-small} {
+        font-size: width-proportional-size(800);
+    }
+    @media #{$media-minimum} {
+        font-size: width-proportional-size(400);
+        //        was 600
+    }
+    @media #{$media-maximum} {
+        font-size: 16px;
+    }
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    background-color: #FFF;
+    font-family: 'Montserrat', 'Arial', 'sans-serif';
+    font-style: normal;
+    font-weight: 300;
+    overflow-x: hidden !important;
+}
+
+button,
+select,
+input,
+textarea {
+    padding: 0;
+    margin: 0;
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+button {
+    cursor: pointer;
+}

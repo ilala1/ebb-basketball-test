@@ -1,0 +1,38 @@
+{
+  "name": "ebb-basketball",
+  "version": "1.0.0",
+  "description": "This README would normally document whatever steps are necessary to get your application up and running.",
+  "main": "index.dust",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ilala1/ebb-basketball-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://github.com/ilala1/ebb-basketball-test",
+  "dependencies": {
+    "enigma-static-build": "^0.3.5",
+    "gulp": "^3.9.1",
+    "heroku-cli": "^6.13.1",
+    "autoprefixer": "^7.1.1",
+    "browser-sync": "^2.18.12",
+    "dustjs-linkedin": "^2.7.5",
+    "gulp-browserify": "^0.5.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-dust-html": "0.0.6",
+    "gulp-htmlclean": "^2.7.14",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-newer": "^1.3.0",
+    "gulp-postcss": "^7.0.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-strip-debug": "^1.1.0",
+    "gulp-uglify": "^3.0.0",
+    "minifycss": "^1.0.1",
+    "nodemon": "^1.11.0",
+    "mongodb": "^2.2.30"
+  }
+}

@@ -1,0 +1,7 @@
+{> "html/partials/structure" /}
+
+{<content}
+
+    {> "html/partials/block/copy" /}
+    {> "html/partials/block/form" /}
+{/content}

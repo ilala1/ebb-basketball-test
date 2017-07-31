@@ -1,0 +1,43 @@
+<div class="wrapper">
+    <div class="first">
+        <form id="myform"  action="/" method="POST" class="form">
+            <h3>FILL IN YOUR DETAILS TO RECIEVE MORE INFO</h3>
+            <p>
+                <label id="firstname" for="fname">
+                 <span>NAME </span>
+                 <br />
+                </label>
+                <input type="text" class="textbox validate" id="fname" name="fname">
+            </p>
+            <p>
+                <label for="sname">
+                    <span>TEAM NAME </span>
+                    <br />
+                </label>
+                <input type="text" class="textbox validate" id="tname" name="sname">
+            </p>
+            <p>
+                <label for="telephone">
+                    <span>PHONE NUMBER </span>
+                    <br />
+                </label>
+                <input type="text" class="textbox validate" id="phone" name="phone">
+            </p>
+            <p>
+                <label for="email">
+                    <span>EMAIL </span>
+                    <br />
+                </label>
+                <input type="email" class="textbox validate" id="email" name="email">
+            </p>
+            <p>
+                <label for="town">
+                    <span>TOWN </span>
+                    <br />
+                </label>
+                <input type="text" class="textbox validate" id="town" name="town">
+            </p>
+            <input type="submit" class="submit button" value="Submit">
+        </form>
+    </div>
+</div>

@@ -1,0 +1,164 @@
+main {
+    display: flex;
+    align-items: flex-start;
+    padding: 0 $padding-sides-normal;
+    .copy {
+        p {
+            font-family: Montserrat, Arial, sans-serif;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 1.125rem;
+            line-height: 1.625rem;
+            color: #101d49;
+        }
+        p:not(:last-child) {
+            margin-bottom: 2.1875rem;
+        }
+    }
+    p.signoff {
+        margin-top: 2.8125rem;
+        font-size: 0.8125rem;
+    }
+    .thanks {
+        width: 20rems;
+        margin-bottom: 0.3125rem;
+        font-size: 1.75rem;
+        font-weight: bold;
+        color: $color-light;
+        padding-right: 14rem;
+    }
+    .hidden {
+        display: none;
+    }
+    .form {
+        h2 {
+            color: $color-light;
+            font-family: "Montserrat", Arial, sans-serif;
+            font-weight: bold;
+            font-size: .9375rem;
+            width: 100%;
+        }
+        >h3 {
+            margin-bottom: 1.875rem;
+            font-size: 0.9375rem;
+            font-weight: bold;
+            color: $color-light;
+        }
+        h4 {
+            margin-bottom: 3.875;
+            font-size: 0.9375 !important;
+            font-weight: bold;
+            color: $color-light;
+        }
+        p {
+            font-family: "Montserrat", Arial, sans-serif;
+            font-size: .75rem;
+            font-weight: bold;
+            color: black;
+            margin-bottom: 0.2rem;
+            margin-top: 1rem;
+            label {
+                display: block;
+                margin-bottom: 0.3125rem;
+                font-size: 0.75rem;
+                font-weight: bold;
+            }
+        }
+        input[type="text"],
+        input[type="email"] {
+            border: 1px solid #9fa5b6;
+            display: block;
+            width: 100%;
+            background-color: #fbfdfd;
+            margin-bottom: 1rem;
+            padding: 0.625rem 0.75rem;
+            border-radius: 3px;
+            text-align: left;
+            font-family: 'Montserrat', Arial, sans-serif;
+            font-size: 0.875rem;
+        }
+        input[type="submit"] {
+            font-family: "Montserrat", Arial, sans-serif;
+            display: inline-block;
+            -webkit-appearance: none;
+            background: $color-light;
+            padding: 0.875rem 3rem;
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: bold;
+            font-size: 0.9rem;
+            color: #fff;
+        }
+    }
+    @media #{$media-minimum} {
+        padding: 3.125rem $padding-sides-minimum;
+        flex-wrap: wrap;
+        .copy {
+            flex: 0 0 100%
+        }
+        >div.wrapper {
+            flex: 0 0 100%;
+            margin-top: 3.125rem;
+        }
+        .form {
+            h2 {
+                font-size: .7375rem;
+            }
+            p {
+                label {
+                    display: block;
+                    margin-bottom: 0.3125rem;
+                    font-size: 0.5rem;
+                }
+            }
+            input[type="text"],
+            input[type="email"] {
+                border: 1px solid #9fa5b6;
+                display: block;
+                width: 100%;
+                background-color: #fbfdfd;
+                margin-bottom: 1rem;
+                padding: 0.225rem 0.75rem;
+                border-radius: 3px;
+                text-align: left;
+                font-family: 'Montserrat', Arial, sans-serif;
+                font-size: 0.875rem;
+            }
+        }
+    }
+    @media #{$media-small} {
+        padding: 6.25rem $padding-sides-small;
+        section.copy {
+            flex: 0 0 65%;
+        }
+        .first {
+            flex: 0 0 35%;
+        }
+        .copy>p {
+            padding-right: 3.125rem;
+        }
+    }
+    @media #{$media-normal-up} {
+        padding: 6.25rem $padding-sides-normal;
+        justify-content: space-between;
+        >section.copy {
+            flex: 0 0 65%;
+            p {
+                padding-right: 6.25rem;
+            }
+        }
+        >p {
+            padding-right: 6.25rem;
+        }
+        .wrapper {
+            div.first {
+                flex: 0 0 35%;
+                .form {
+                    overflow: hidden;
+                    height: 475px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

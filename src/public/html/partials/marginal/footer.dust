@@ -1,0 +1,9 @@
+<footer>
+    <section class="upper-footer">
+        <div class="right">
+            <a class="social" href="#"><img src="images/twitter.svg" alt="Twitter"></a>
+            <a class="social" href="#"><img src="images/fb.svg" alt="Facebook"></a>
+            <a class="social" href="#"><img src="images/youtube.svg" alt="YouTube"></a>
+        </div>
+    </section>
+</footer>
